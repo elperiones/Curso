@@ -79,7 +79,7 @@ elif decision1 == "revolver":
         if decision2 == "duelo":
 
             print("\n Diez pasos. Te giras... ¡BANG! Eres más rapido, pero el extraño era el hijo del Gobernador. ")
-            decision3 = input("¿Que haces? ¿HUIR hacia las montañas  o ENTREGARTE a la justicia ? > ").lower()
+            decision3 = input("¿Que haces? ¿HUIR hacia las montañas, ENTREGARTE a la justicia o SOBORNAR a los cazarrecompensas ? > ").lower()
             
             if decision3 == "huir":
                 print("\n Encuentras una mina abandonada llena de dinamita y suministros. ")
@@ -87,6 +87,22 @@ elif decision1 == "revolver":
             elif decision3 == "entregarte":
                 print("\n Crees en la justicia, pero el juez es corrupto. Te condenan sin juicio. ")
                 print(" Game Over. La ley siempre gana en este siglo. \n")
+            elif decision3 == "sobornar":
+                print("\n Intentas Sobornarlos para llegar a un acuerdo a lo cual esto lleva a un problema de ideas opuestas.")
+                print("Los Cazarrecompensas quieren mas de la mitad del botin del atraco al banco de Valentine.")
+                print("Solo te quedan dos maneras de terminar el encuentro. \n")
+                
+                decision4 = input("¿MENTIR para posteriormente apuñalarlos por la espalda o les das mas de la MITAD del botin? > ").lower()
+
+                if decision4 == "mentir":
+                    print("\n En el momento de tu traicion los cazarrecompensas se dan cuenta y terminan en una pelea a muerte. ")
+                    print("Game Over. Nadie queda con vida. \n")
+                elif decision4 == "mitad":
+                    print("\nLos cazarrecompensas saltan de la emocion por haberte sacado casi todo el botin. ")
+                    print("Pero al menos cumplieron su parte del trato y te dejaron libre.")
+                    print("GANASTE! Pero perdiste todo el botin, a veces es mejor permanecer la vida. \n")
+                else:
+                    print("Respuesta no valida. Te amordazaron y te llevaron por la recompensa junto al sheriff. Game Over. \n")
             else:
                 print(" Respuesta no valida. Te disparan mientras lo piensas. Game Over. \n")
 
